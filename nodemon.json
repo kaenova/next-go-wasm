@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "ignore": ["node_modules", ".next"],
+  "watch": ["./src/go/"],
+  "exec": "GOOS=js GOARCH=wasm go build -o public/main.wasm src/go/main.go && next dev",
+  "ext": "go"
+}

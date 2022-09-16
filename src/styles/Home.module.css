@@ -1,3 +1,7 @@
+h1.title {
+  font-size: 80px;
+}
+
 .container {
   padding: 0 2rem;
 }
@@ -74,6 +78,7 @@
 }
 
 .card {
+  background-color: transparent;
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
@@ -83,18 +88,17 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  cursor: pointer;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
+.card:hover {
   color: #0070f3;
   border-color: #0070f3;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.card:active {
+  color: white;
+  border-color: white;
 }
 
 .card p {
